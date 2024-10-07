@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family:"Open Sans", sans-serif;
     color: #f1f1f1;
 }
+
 html,body{
     height: 100%;
     width: 100%;
@@ -48,7 +50,6 @@ canvas{
     width: 100%;
     font-size: 100px;
     white-space: nowrap;
-    font-family: gilroy;
 }
 .cont
 {
@@ -59,7 +60,7 @@ canvas{
     width: 32%;
 }
 #loop>h1{
-
+    font-family: gilroy;
     font-weight: 400;
     animation-name: anim;
     animation-duration: 25s;
@@ -67,9 +68,13 @@ canvas{
     animation-iteration-count: infinite;
 }
 #loop>h1>span{
+    font-family: gilroy;
     -webkit-text-stroke: 1.2px #ffffff;
     color: transparent;
     font-weight: 500;
+}
+#loop>h1>i{
+    font-family: gilroy;
 }
 @keyframes anim{
     0%{
