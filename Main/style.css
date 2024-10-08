@@ -10,7 +10,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #ffffff;
 }
 #main{
     position: relative;
@@ -234,7 +234,7 @@ canvas{
 #page2>#text2{
     position: absolute;
     text-transform: uppercase;
-    top: 55%;
+    top: 50%;
     right: 10%;
     text-align: end;
 }
