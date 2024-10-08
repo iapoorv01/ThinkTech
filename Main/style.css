@@ -116,8 +116,49 @@ canvas{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 .btn:hover
+{
+    color: #000;
+    border: 2px solid #9c9898;
+    background-color: #9c9898;
+}
+.btn2
+{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    border: 2px solid #fff;
+    transition: all 0.5s;
+    color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.btn2:hover
+{
+    color: #000;
+    border: 2px solid #9c9898;
+    background-color: #9c9898;
+}
+.btn3
+{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    border: 2px solid #fff;
+    transition: all 0.5s;
+    color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0%;
+    margin-top: 15px;
+}
+.btn3:hover
 {
     color: #000;
     border: 2px solid #9c9898;
@@ -141,9 +182,10 @@ canvas{
 #page1>#right-text{
     position: absolute;
     font-size: medium;
-    top: 30%;
-    left: 10%;
+    top: 40%;
+    right: 10%;
     text-transform: uppercase;
+    text-align: right;
 }
 #page1>#right-text>h3{
     font-weight: 400;
@@ -157,10 +199,11 @@ canvas{
 }
 #page1>#left-text{
     position: absolute;
-    top: 50%;
-    right: 10%;
+    top: 30%;
+    left: 10%;
     text-align: end;
     text-transform: uppercase;
+    text-align: left ;
 }
 #page1>#left-text>h1{
     font-size: 22px;
