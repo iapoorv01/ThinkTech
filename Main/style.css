@@ -113,6 +113,9 @@ canvas{
     border: 2px solid #fff;
     transition: all 0.5s;
     color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn:hover
 {
