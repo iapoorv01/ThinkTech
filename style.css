@@ -180,12 +180,15 @@ canvas{
     font-weight: 500;
 }
 #page1>#right-text{
+    border: 2px solid red;
     position: absolute;
     font-size: medium;
     top: 40%;
     right: 10%;
     text-transform: uppercase;
     text-align: right;
+    height: fit-content;
+    width: fit-content;
 }
 #page1>#right-text>h3{
     font-weight: 400;
@@ -246,7 +249,9 @@ canvas{
 #page3>#text3{
     position: absolute;
     text-transform: uppercase;
-    top: 40%;
+    height: 50%;
+    width: 25%;
+    top: 30%;
     right: 10%;
     text-align: end;
 }
