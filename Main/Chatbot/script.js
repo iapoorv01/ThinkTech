@@ -50,23 +50,24 @@ generateApiResponse(aiChatBox)
 
 }
 
+
 btn.addEventListener("click",()=>{
-    userMessage=prompt.value;
-    if(prompt.value=""){
-      container.style.display="flex"
-    }else{
-       container.style.display="none"
-    }
-    if(!userMessage)return;
-  const html=` <div id="img">
-        <img src="user.png" alt="">
-    </div>
-    <div class="text">
-    </div>`
- let userChatBox=createChatBox(html,"user-chat-box")
- userChatBox.querySelector(".text").innerText=userMessage
- chatContainer.appendChild(userChatBox)
- prompt.value=""
- setTimeout(showLoading,500)
+  userMessage=prompt.value;
+  if(prompt.value=""){
+    container.style.display="flex"
+  }else{
+     container.style.display="none"
+  }
+  if(!userMessage)return;
+const html=` <div id="img">
+      <img src="user.png" alt="">
+  </div>
+  <div class="text">
+  </div>`
+let userChatBox=createChatBox(html,"user-chat-box")
+userChatBox.querySelector(".text").innerText=userMessage
+chatContainer.appendChild(userChatBox)
+prompt.value=""
+setTimeout(showLoading,500)
 
 })
