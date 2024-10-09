@@ -94,7 +94,7 @@ canvas{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 7%;
+    height: 10%;
     width: 100%;
     position: fixed;
     z-index: 99;
@@ -135,7 +135,7 @@ canvas{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 .btn2:hover
 {
@@ -180,15 +180,14 @@ canvas{
     font-weight: 500;
 }
 #page1>#right-text{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     font-size: medium;
     top: 40%;
     right: 10%;
     text-transform: uppercase;
     text-align: right;
-    height: fit-content;
-    width: fit-content;
+    width: 32%;
 }
 #page1>#right-text>h3{
     font-weight: 400;
@@ -263,4 +262,19 @@ canvas{
 #page3>#text3>h1{
     font-size: 70px;
     text-transform: uppercase;
+}
+.footer
+{
+    height: 80px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.images
+{
+    height: 40px;
+
 }
