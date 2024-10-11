@@ -1,3 +1,4 @@
+
 let btn = document.querySelector("#btn");
 let content = document.querySelector("#content");
 let voice = document.querySelector("#voice");
@@ -11,6 +12,11 @@ function speak(text) {
     text_speak.volume = 1;
     text_speak.lang = "hi-GB";
     window.speechSynthesis.speak(text_speak);
+
+    setTimeout(() => {
+    let voices=window.speechSynthesis.Synthesis.getVoices();
+    text_speak.voice = voices.find(voice => voice.lang === "hi-GB" && voice.name.includes("Female") || voices[0]);
+    window.speeckSynthesis.speak(text_speak);},100);
 }
 
 function wishMe() {
@@ -18,11 +24,11 @@ function wishMe() {
         let day = new Date();
         let hours = day.getHours();
         if (hours >= 0 && hours < 12) {
-            speak("Good Morning Sir");
+            speak("Good Morning User");
         } else if (hours >= 12 && hours < 16) {
-            speak("Good Afternoon Sir");
+            speak("Good Afternoon User");
         } else {
-            speak("Good Evening Sir");
+            speak("Good Evening User");
         }
         greeted = true; // Set flag to true after greeting
     }
@@ -50,7 +56,7 @@ function takeCommand(message) {
     btn.style.display = "flex";
     
     if (message.includes("hello") || message.includes("hey")) {
-        speak("hello sir, what can I help you?");
+        speak("hello User, what can I help you?");
     } else if (message.includes("who are you")) {
         speak("I am a virtual assistant, created by Mr. Apoorv");
     } else if (message.includes("open youtube")) {
@@ -73,6 +79,9 @@ function takeCommand(message) {
     } else if (message.includes("open whatsapp")) {
         speak("opening whatsapp..");
         window.open("whatsapp://");
+    } else if (message.includes("open spotify")) {
+        speak("opening spotify..");
+        window.open("spotify://");
     } else if (message.includes("time")) {
         let time = new Date().toLocaleString(undefined, { hour: "numeric", minute: "numeric" });
         speak(time);
@@ -82,6 +91,16 @@ function takeCommand(message) {
     } else {
         let finalText = "this is what I found on the internet regarding " + message.replace("maahi", "").replace("mahi", "");
         speak(finalText);
-        window.open(`https://www.google.com/search?q=${message.replace("maahi", "").replace("mahi", "")}`, "_blank");
-    }
+        window.open(`https://www.google.com/search?q=${message.replace("maahi", "").replace("mahi", "")}, "_blank"`);
+    }
 }
+
+ // Get the current date
+ const date = new Date();
+
+ // Format the date (e.g., "October 4, 2024")
+ const options = { year: 'numeric', month: 'long', day: 'numeric' };
+ const formattedDate = date.toLocaleDateString('en-US', options);
+ 
+ // Find the element where the date should be displayed and set its content
+ document.getElementById('currentDate').textContent = formattedDate;
