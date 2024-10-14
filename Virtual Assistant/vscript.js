@@ -91,7 +91,7 @@ function takeCommand(message) {
     } else {
         let finalText = "this is what I found on the internet regarding " + message.replace("maahi", "").replace("mahi", "");
         speak(finalText);
-        window.open(`https://www.google.com/search?q=${message.replace("maahi", "").replace("mahi", "")}, "_blank"`);
+        window.open(`https://www.google.com/search?q=${message.replace("maahi", "").replace("mahi", "")},`);
     }
 }
 
