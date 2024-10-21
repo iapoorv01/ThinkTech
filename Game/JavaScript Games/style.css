@@ -15,29 +15,33 @@
 {
     width: 100%;
     height: 700px;
-    border: 2px solid red;   
+    /* border: 2px solid red;    */
 }
 .game-section
 {
     width: 100%;
     height: 100%;
     display: grid;
-    border: 5px solid pink;
-    gap: 10px;
+    /* border: 5px solid pink; */
+    gap: 0px 10px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows:repeat(6, 1fr) ;
 }
 .back{
     justify-content: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 .game
 {
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     display: flex;
-    padding: 10px;
-    align-items: end;
-    border: 2px solid rgb(255, 0, 0);
+    /* padding: 10px; */
+    align-items: center;
+    /* border: 2px solid rgb(255, 0, 0); */
+    overflow: hidden;
+    border-radius: 10px;
     /* margin-bottom: 40px; */
 }
 .game-2048{
@@ -195,4 +199,9 @@
 {
     height: 100%;
     width: 100%;
+}
+.link{
+    border: none;
+    width: 100%;
+    height: 100%;
 }

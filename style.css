@@ -5,8 +5,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    /* font-family:"Open Sans", sans-serif; */
-    font-family: 'Times New Roman', Times, serif;
+    font-family:sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     color: #f1f1f1;
 }
 
@@ -188,69 +188,69 @@ canvas{
     font-size: medium;
     top: 40%;
     right: 10%;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: right;
     width: 32%;
 }
 #page1>#right-text>h3{
     font-weight: 400;
     color: #9c9898;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 #page1>#right-text>h1{
     line-height: 1.5;
     font-size: 22px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 #page1>#left-text{
     position: absolute;
     top: 30%;
     left: 10%;
     text-align: end;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: left ;
 }
 #page1>#left-text>h1{
     font-size: 22px;
      line-height: 1.5;
-     text-transform: uppercase;
+     text-transform: capitalize;
 }
 #page1>#left-text>h3{
     color: #9c9898;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 #page2>#text1{
     position: absolute;
-    text-transform: uppercase;
+    text-transform: capitalize;
     top: 30%;
     left: 10%;
 }
 #page2>#text1>h3{
     color: #9c9898;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 #page2>#text1>h1{
     font-size: 22px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     line-height: 1.5;
 }
 #page2>#text2{
     position: absolute;
-    text-transform: uppercase;
+    text-transform: capitalize;
     top: 50%;
     right: 10%;
     text-align: end;
 }
 #page2>#text2>p{
     color: #9c9898;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 400;
 }
 #page3>#text3{
     position: absolute;
-    text-transform: uppercase;
+    text-transform: capitalize;
     height: 50%;
     width: 25%;
     top: 30%;
@@ -259,12 +259,12 @@ canvas{
 }
 #page3>#text3>h3{
     color: #9c9898;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 400;
 }
 #page3>#text3>h1{
     font-size: 70px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .footer
 {
