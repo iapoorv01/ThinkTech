@@ -243,6 +243,7 @@ canvas{
     top: 50%;
     right: 10%;
     text-align: end;
+    border: 2px solid red;
 }
 #page2>#text2>p{
     color: #9c9898;
@@ -280,5 +281,19 @@ canvas{
 .images
 {
     height: 40px;
-
+}
+.text-to-image{
+    border: 2px solid red;
+    width: fit-content;
+    position: absolute;
+    right: 10%;
+    bottom: 8%;
+}
+.chat-bot
+{
+    border: 2px solid pink;
+    width: fit-content;
+    position: absolute;
+    right: 10%;
+    bottom:13%
 }
