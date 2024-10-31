@@ -32,7 +32,8 @@ html,body{
 #page2{
     position: relative;
     height: 100vh;
-    width: 100vw;
+    /* border: 2px solid red; */
+    width: 100%;
 }
 #page3{
     position: relative;
@@ -224,6 +225,7 @@ canvas{
 #page2>#text1{
     position: absolute;
     text-transform: capitalize;
+    /* font-size: medium; */
     top: 30%;
     left: 10%;
 }
@@ -240,10 +242,10 @@ canvas{
 #page2>#text2{
     position: absolute;
     text-transform: capitalize;
-    top: 50%;
+    bottom:15%;
     right: 10%;
     text-align: end;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 #page2>#text2>p{
     color: #9c9898;
@@ -283,17 +285,19 @@ canvas{
     height: 40px;
 }
 .text-to-image{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: fit-content;
     position: absolute;
     right: 10%;
-    bottom: 8%;
+    bottom: 50%;
+    text-align: end;
 }
 .chat-bot
 {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     width: fit-content;
+    height: fit-content;
     position: absolute;
     right: 10%;
-    bottom:13%
+    bottom:0;
 }
