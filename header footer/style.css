@@ -2,10 +2,10 @@
     margin: 0;
     padding:0;
     box-sizing:border-box ;
-    background: #000000;
 }
 .nav
 {
+    background: #000000;
     /* border: 2px solid white; */
     height: 100px;
     width: 100%;
@@ -29,8 +29,9 @@
 .btn2:hover
 {
     color: #000;
-    border: 2px solid #9c9898;
-    background-color: #9c9898;
+    border: 2px solid black;
+    background: linear-gradient(to right,white,#9c9898 ,rgb(91, 88, 88));
+
 }
 .footer
 {
@@ -44,6 +45,7 @@
     padding: 0px 15px 0px 15px;
     align-items: center;
     margin-top: 60px;
+
 }
 .images
 {

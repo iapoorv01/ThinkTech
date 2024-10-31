@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Research Papers, Articles, Videos, and Podcasts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../header footer/style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+           <a href="https://animation-1-beta.vercel.app/"><img src="/jpgs/logo.png" alt="#" height="60px"></a>
+        </div>
+        <button class="btn2">
+          <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;" width="15px"
+              viewBox="0 0 448 512">
+              <path fill="#ffffff"
+                  d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z" />
+          </svg>
+          <span id="currentDate"></span>
+      </button>
+      </div>
+    <div class="main">
+        <h1>Search for Research Papers, Articles, Videos, and Podcasts</h1>
+        <!-- Research Paper Search Section -->
+        <section id="researchPaperSearch">
+            <h2>Search for Research Papers</h2>
+            <form id="researchPaperSearchForm" action="" method="get" target="_blank" onsubmit="return searchResearchPapers();">
+                <select name="website" id="researchPaperWebsite" required>
+                    <option value="">Select a website</option>
+                    <option value="https://scholar.google.com/scholar?q=">Google Scholar</option>
+                    <option value="https://www.researchgate.net/search?q=">ResearchGate</option>
+                    <option value="https://www.jstor.org/action/doBasicSearch?Query=">JSTOR</option>
+                    <option value="https://www.sciencedirect.com/search?qs=">ScienceDirect</option>
+                    <option value="https://link.springer.com/search?query=">Springer</option>
+                    <option value="https://www.acm.org/publications/search?q=">ACM Digital Library</option>
+                    <option value="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=">IEEE Xplore</option>
+                    <option value="https://www.mdpi.com/search?q=">MDPI</option>
+                    <option value="https://www.frontiersin.org/search?q=">Frontiers</option>
+                    <option value="https://www.tandfonline.com/action/doSearch?AllField=">Taylor & Francis Online</option>
+                    <option value="https://www.wiley.com/en-us">Wiley Online Library</option>
+                    <option value="https://www.ncbi.nlm.nih.gov/pubmed/?term=">PubMed</option>
+                    <option value="https://www.research.com/">Research.com</option>
+                </select>
+                <input type="text" name="q" placeholder="Enter your search term" required>
+                <a href="#"><button id="button" type="submit">Search</button></a>
+            </form>
+        </section>
+
+        <!-- Article Search Section -->
+<!-- Article Search Section -->
+<section id="articleSearch">
+    <h2>Search for Articles</h2>
+    <form id="articleSearchForm" action="" method="get" target="_blank" onsubmit="return searchArticles();">
+        <select name="website" id="articleWebsite" required>
+            <option value="">Select a website</option>
+            <option value="https://www.medium.com/search?q=">Medium</option>
+            <option value="https://www.huffpost.com/search?q=">HuffPost</option>
+            <option value="https://www.theguardian.com/uk/search?q=">The Guardian</option>
+            <option value="https://www.bbc.com/search?q=">BBC</option>
+            <option value="https://www.nytimes.com/search?q=">New York Times</option>
+            <option value="https://www.nationalgeographic.com/search?q=">National Geographic</option>
+            <option value="https://www.wired.com/search/?q=">Wired</option>
+            <option value="https://www.theatlantic.com/search/?q=">The Atlantic</option>
+            <option value="https://www.forbes.com/search/?q=">Forbes</option>
+            <option value="https://qz.com/search/?q=">Quartz</option>
+            <option value="https://hbr.org/search?term=">Harvard Business Review</option>
+            <option value="https://www.technologyreview.com/search/?s=">MIT Technology Review</option>
+            <option value="https://www.reuters.com/search/news/?blob=">Reuters</option>
+            <option value="https://www.bloomberg.com/search?query=">Bloomberg</option>
+            <option value="https://www.pewresearch.org/search/?q=">Pew Research Center</option>
+            <option value="https://www.weforum.org/search?q=">World Economic Forum</option>
+            <option value="https://www.smithsonianmag.com/search/?q=">Smithsonian Magazine</option>
+            <option value="https://www.usa.gov/search?q=">USA.gov</option>
+            <option value="https://www.nih.gov/search/?q=">NIH</option>
+            <option value="https://europa.eu/search/?query=">European Union</option>
+        </select>
+        <input type="text" name="q" placeholder="Enter your search term" required>
+        <button id="button" type="submit">Search</button>
+    </form>
+</section>
+
+
+        <!-- Video Search Section -->
+        <section id="videoSearch">
+            <h2>Search for Videos</h2>
+            <form id="videoSearchForm" action="" method="get" target="_blank" onsubmit="return searchVideos();">
+                <select name="website" id="videoWebsite" required>
+                    <option value="">Select a website</option>
+                    <option value="https://www.youtube.com/results?search_query=">YouTube</option>
+                    <option value="https://vimeo.com/search?q=">Vimeo</option>
+                    <option value="https://www.c-span.org/search/?q=">C-SPAN</option>
+                    <option value="https://www.khanacademy.org/search?search_again=1&page_search_query=">Khan Academy</option>
+                </select>
+                <input type="text" name="q" placeholder="Enter your search term" required>
+                <button id="button" type="submit">Search</button>
+            </form>
+        </section>
+
+        
+<!-- Podcast Search Section -->
+<section id="podcastSearch">
+    <h2>Search for Podcasts</h2>
+    <form id="podcastSearchForm" action="" method="get" target="_blank" onsubmit="return searchPodcasts();">
+        <select name="website" id="podcastWebsite" required>
+            <option value="">Select a website</option>
+            <option value="https://open.spotify.com/search/">Spotify</option>
+            <option value="https://podcasts.apple.com/search?term=">Apple Podcasts</option>
+            <option value="https://podcasts.google.com/search/">Google Podcasts</option>
+            <option value="https://www.stitcher.com/search?q=">Stitcher</option>
+            <option value="https://pca.st/search?query=">Pocket Casts</option>
+            <option value="https://www.podchaser.com/search/podcasts?q=">Podchaser</option>
+            <option value="https://castbox.fm/search/">Castbox</option>
+            <option value="https://overcast.fm/search?q=">Overcast</option>
+            <option value="https://www.iheart.com/search/?q=">iHeartRadio</option>
+            <option value="https://tunein.com/search/?query=">TuneIn</option>
+            <option value="https://www.listennotes.com/search/?q=">Listen Notes</option>
+            <option value="https://podcastaddict.com/search?q=">Podcast Addict</option>
+            <option value="https://radiopublic.com/search?q=">RadioPublic</option>
+        </select>
+        <input type="text" name="q" placeholder="Enter your search term" required>
+        <button id="button" type="submit">Search</button>
+    </form>
+</section>
+
+    </div>
+    <div class="footer">
+        
+        <div style="color: aliceblue;"><b><span style="color: #9c9898;">©2024</span></b><b>THINK</b>Tech</div>
+        <div>
+            <a href="https://animation-1-beta.vercel.app/"><img class="logo" src="../jpgs/logo.png" alt="#" height="60px"></a>
+        </div>
+        <div class="img1">
+            <a href="https://github.com/iapoorv01">
+                <img src="../jpgs/github.png" alt=""  class="images">
+            </a>
+            <a href="https://www.instagram.com/i__apoorv__01?igsh=YWtjNXg4MTVpdTVr">
+                <img src="../jpgs/instagram.png" alt="" class="images">
+            </a>
+            <a href="https://www.linkedin.com/in/iapoorv01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
+                <img src="../jpgs/linkedin.png" alt=""  class="images">
+            </a>
+            <a href="#"></a>
+        </div>
+    </div>
+   
+</body>
+<script src="header footer/date.js"></script>
+    <script src="../header footer/date.js"></script>
+</html>
