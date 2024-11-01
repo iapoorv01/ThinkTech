@@ -1,4 +1,4 @@
-const key = "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";
+const key = "YOUR API KEY";   // REPLACE WITH YOUR OWN API KEY
 const inputText = document.getElementById("input");
 const image = document.getElementById("image");
 const GenBtn = document.getElementById("btn");
